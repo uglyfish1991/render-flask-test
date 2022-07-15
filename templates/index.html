@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="charbox">
+    <div class="card hydro"><b>Xingqiu</b>
+        <img src="{{url_for('static', filename = 'imgs/xing.png')}}" class="profile">
+        <ul>
+            <li>Level: 90</li>
+            <li> Talents: 8 9 9</li>
+            <li> Role:Sub-DPS</li>
+            <li> Weapon: Sacrifical Sword</li>
+            <li>Set: Severed Fate</li>
+            <li>Notes: Support loadout for Kazuha &lt;-&gt; Diona swap</li>
+    </ul></div>
+    <div class="card cryo"><b>Diona</b>
+        <img src="{{url_for('static', filename = 'imgs/diona.png')}}" class="profile">
+        <ul>
+            <li>Level: 90</li>
+            <li> Talents: 4 8 8</li>
+            <li> Role: Support</li>
+            <li> Weapon: Sacrifical Bow</li>
+            <li>Set: Tenacity</li>
+            <li>Notes: Build full HP</li>
+        </ul>
+    </div>
+    <div class="card electro"><b>Fischl</b>
+        <img src="{{url_for('static', filename = 'imgs/fischl.png')}}" class="profile">
+        <ul>
+            <li>Level: 90</li>
+            <li> Talents: 8 13 13</li>
+            <li> Role: Sub-DPS</li>
+            <li> Weapon: Stringless</li>
+            <li>Set: Thundering Fury</li>
+            <li>Notes:</li>
+        </ul>
+    </div>
+    <div class="card cryo"><b>Rosaria</b>
+        <img src="{{url_for('static', filename = 'imgs/rosaria.png')}}" class="profile">
+        <ul>
+            <li>Level: 90</li>
+            <li> Talents: 8 13 12</li>
+            <li> Role: Main-DPS</li>
+            <li> Weapon:Deathmatch</li>
+            <li>Set:Blizzard Strayer</li>
+            <li>Notes: Physical loadout for cryo enimies</li>
+        </ul>
+    </div>
+{% endblock %}

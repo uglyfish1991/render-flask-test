@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Montserrat:wght@300&display=swap');
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-image: url('imgs/gibg.jpg');
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1,h2,h3{
+    font-family: 'Major Mono Display', monospace;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    font-size: 1.2rem;
+  }
+
+b{
+    font-family: 'Major Mono Display', monospace;
+    font-size: 2rem;
+    border-bottom: 3px white solid;
+    margin-bottom: 4px;
+}
+
+.navbar{
+    align-self: stretch !important;
+}
+
+.bg-light{
+    background-color: rgba(0, 140, 255, 0.475) !important;
+}
+
+.container{
+    width:95vw;
+    height:90vh;
+    overflow: auto;
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0px 0px 40px 20px rgba(255, 255, 255, 0.356);
+}
+
+.charbox{
+    display: flex;
+}
+
+.card{
+    border: 3px white solid;
+    padding: 1%;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0px 0px 40px 20px rgba(255, 255, 255, 0.356);
+}
+
+.cryo{
+    background-color: rgba(127, 240, 255, 0.817);
+}
+
+.hydro{
+    background-color: rgba(127, 170, 255, 0.817);
+}
+
+.electro{
+    background-color: rgba(202, 127, 255, 0.817);
+}
+
+.profile{
+    border: 3px white solid;
+    opacity: 0.6;
+    transition-duration: 0.5s;
+}
+
+.profile:hover{
+    opacity: 1;
+    box-shadow: 0px 0px 40px 20px rgba(255, 255, 255, 0.356);
+}
+
+@media (orientation:portrait) {
+    .charbox{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .profile{
+        width:50%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+}
